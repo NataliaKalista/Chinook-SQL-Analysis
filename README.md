@@ -13,6 +13,7 @@ The project demonstrates the ability to query relational databases, perform comp
 
 ## Key Problems & Solutions
 
+
 ### 1. Employee Performance Evaluation 
 **Problem:** top-performing Sales Support Agent based on the total revenue generated from their assigned customers.
 
@@ -24,8 +25,10 @@ GROUP BY employee.FirstName, employee.LastName
 ORDER BY Total_Sum DESC;
 ```
 
-**Query Result:**
+**Query Result:**  
+
 ![BestSellingEmployees](Outputs/BestSellingEmployees.png)
+
 
 ### 2. Sales Trends Over Time 
 **Problem:** How has the company's revenue performed year-over-year?
@@ -39,8 +42,10 @@ GROUP BY YEAR(InvoiceDate)
 ORDER BY SalesYear DESC;
 ```
 
-**Query Result:**
+**Query Result:**  
+
 ![SalesTrends](Outputs/SellingTrends.png)
+
 
 
 ### 3. Customer Segmentation (VIPs) 
@@ -64,8 +69,10 @@ GROUP BY customer.CustomerId , customer.FirstName, customer.LastName
 ORDER BY TotalSpent DESC;
 ```
 
-**Query Result:**
+**Query Result:**  
+
 ![CategorizedClients](Outputs/CategorizedClients.png)
+
 
 ### 4. Best Clients in each Country
 **Problem:** top-spending customer in each country.
@@ -85,8 +92,10 @@ FROM CustomerCountrySales
 WHERE TotalSpent > 0;
 ```
 
-**Query Result:**
+**Query Result:**  
+
 ![RankCountry](Outputs/RankInEveryCountry.png)
+
 
 
 ### 5. Cumulative Sales Growth (Running Total) 
@@ -107,12 +116,21 @@ SELECT
 FROM YearlySales;
 ```
 
-**Query Result:**
+**Query Result:**  
+
 ![CumulativeSalesGrowth](Outputs/CumulatedSum.png)
 
 
-📂 Files in this Repository
+
+### 📂 Files in this Repository
 ***Chinook_Analysis.sql*** - The complete source code file containing all queries.
+
+
 ***Chinook_MySql.sql*** - The complete Chinook database.
+
+
 ***Outputs*** - Folder containg the screenshots of the results.
+
+
 ***Scheme*** - Chinook database scheme.
+
