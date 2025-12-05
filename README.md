@@ -11,6 +11,11 @@ The project demonstrates the ability to query relational databases, perform comp
 
 ---
 
+### Database Schema:
+
+![DatabaseSchema](Schema.png)
+
+
 ## Key Problems & Solutions
 
 
@@ -132,5 +137,6 @@ FROM YearlySales;
 ***Outputs*** - Folder containg the screenshots of the results.
 
 
-***Scheme*** - Chinook database scheme.
+***Schema*** - Chinook database schema.
+
 
